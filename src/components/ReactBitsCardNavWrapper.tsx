@@ -4,8 +4,8 @@ import React from 'react'
 import CardNav from './ReactBitsCardNav'
 
 const ReactBitsCardNavWrapper = () => {
-  // Use the actual logo from public folder
-  const logo = "/star_Black.PNG"
+  // Use the actual logo from public folder (note: case-sensitive on servers)
+  const logo = "/star_black.PNG"
 
   const navItems = [
     {
