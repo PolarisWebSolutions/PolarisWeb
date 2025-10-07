@@ -46,12 +46,26 @@ const Pricing = () => {
 
   return (
     <section id="pricing" className="relative bg-black py-16 overflow-hidden">
-      {/* Temporary Simple Background for Testing */}
-      <div className="absolute inset-0 z-0 bg-black">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/20 to-purple-900/20"></div>
+      {/* Background layers */}
+      <div className="absolute inset-0 z-0 bg-black" />
+      <div className="absolute inset-0 z-[1] bg-gradient-to-r from-blue-900/20 to-purple-900/20" />
+      {/* Particles background */}
+      <div className="absolute inset-0 z-[2] pointer-events-none">
+        <Particles 
+          particleCount={200}
+          particleSpread={8}
+          speed={0.08}
+          particleColors={["#ffffff", "#c7d2fe", "#a7f3d0"]}
+          alphaParticles={true}
+          particleBaseSize={60}
+          sizeRandomness={0.8}
+          cameraDistance={20}
+          disableRotation={false}
+          className="w-full h-full"
+        />
       </div>
       
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-[3] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Pricing & Add-Ons
