@@ -9,12 +9,20 @@ import { ShieldCheckIcon, DevicePhoneMobileIcon, GlobeAltIcon } from '@heroicons
 const Hero = () => {
   return (
     <section className="relative bg-deepNavy text-white overflow-hidden" style={{ backgroundColor: '#000000' }}>
-      {/* Temporary Simple Background for Testing */}
-      <div className="absolute inset-0 z-0 bg-gradient-to-br from-blue-900 via-green-900 to-purple-900">
-        <div className="absolute inset-0 bg-black/50"></div>
+      {/* Background gradient */}
+      <div className="absolute inset-0 z-0 bg-gradient-to-br from-blue-900 via-green-900 to-purple-900" />
+      {/* Aurora effect layer (client-only) */}
+      <div className="absolute inset-0 z-[1] pointer-events-none">
+        <Aurora 
+          amplitude={1.0}
+          blend={0.6}
+          colorStops={["#3B82F6", "#10B981", "#8B5CF6"]}
+        />
       </div>
+      {/* Dark overlay for readability */}
+      <div className="absolute inset-0 z-[2] bg-black/50" />
       
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-20 lg:pt-32 lg:pb-32">
+      <div className="relative z-[3] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-20 lg:pt-32 lg:pb-32">
         <div className="text-center">
           <GradientText 
             className="text-4xl md:text-6xl font-bold mb-6"
