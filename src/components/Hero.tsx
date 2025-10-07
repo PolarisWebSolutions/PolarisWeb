@@ -1,3 +1,5 @@
+"use client";
+
 import Link from 'next/link'
 import Button from './Button'
 import Aurora from './Aurora'
@@ -7,14 +9,9 @@ import { ShieldCheckIcon, DevicePhoneMobileIcon, GlobeAltIcon } from '@heroicons
 const Hero = () => {
   return (
     <section className="relative bg-deepNavy text-white overflow-hidden" style={{ backgroundColor: '#000000' }}>
-      {/* Aurora Background */}
-      <div className="absolute inset-0 z-0">
-        <Aurora 
-          colorStops={['#3B82F6', '#10B981', '#8B5CF6']}
-          amplitude={1.2}
-          blend={0.6}
-          speed={1.0}
-        />
+      {/* Temporary Simple Background for Testing */}
+      <div className="absolute inset-0 z-0 bg-gradient-to-br from-blue-900 via-green-900 to-purple-900">
+        <div className="absolute inset-0 bg-black/50"></div>
       </div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-20 lg:pt-32 lg:pb-32">

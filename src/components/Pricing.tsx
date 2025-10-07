@@ -1,3 +1,5 @@
+"use client";
+
 import Link from 'next/link'
 import Card from './Card'
 import Button from './Button'
@@ -44,22 +46,9 @@ const Pricing = () => {
 
   return (
     <section id="pricing" className="relative bg-black py-16 overflow-hidden">
-      {/* Particles Background */}
-      <div className="absolute inset-0 z-0">
-        <Particles 
-          particleCount={800}
-          particleSpread={20}
-          speed={0.05}
-          particleColors={['#ffffff', '#ffffff', '#ffffff']}
-          moveParticlesOnHover={true}
-          particleHoverFactor={2}
-          alphaParticles={true}
-          particleBaseSize={80}
-          sizeRandomness={0.5}
-          cameraDistance={25}
-          disableRotation={false}
-          className="w-full h-full"
-        />
+      {/* Temporary Simple Background for Testing */}
+      <div className="absolute inset-0 z-0 bg-black">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/20 to-purple-900/20"></div>
       </div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
