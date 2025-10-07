@@ -52,7 +52,7 @@ const Pricing = () => {
       {/* Particles background */}
       <div className="absolute inset-0 z-[2] pointer-events-none">
         <Particles 
-          particleCount={200}
+          particleCount={500}
           particleSpread={8}
           speed={0.08}
           particleColors={["#ffffff", "#c7d2fe", "#a7f3d0"]}
