@@ -1,9 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  turbopack: {
-    root: '/Users/jbburrows/Desktop/Polaris'
-  }
+  // Removed turbopack config that was causing deployment issues
 };
 
 export default nextConfig;
