@@ -43,7 +43,7 @@ const Hero = () => {
               onClick={() => {}}
               className="w-full sm:w-auto bg-transparent border-2 border-white text-white hover:bg-white hover:text-black transition-all duration-300"
             >
-              Book a Demo
+              Get Started
             </Button>
             <Button 
               size="lg" 
