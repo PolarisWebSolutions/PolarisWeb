@@ -31,11 +31,9 @@ const CardNav = () => {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`fixed top-4 left-4 right-4 z-50 transition-all duration-300 ${
-        scrolled ? 'top-2' : 'top-4'
-      }`}
+      className={`relative z-50 transition-all duration-300`}
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto mt-4">
         <motion.div
           className={`bg-white/90 backdrop-blur-lg rounded-2xl shadow-xl border border-white/20 p-4 transition-all duration-300 ${
             scrolled ? 'shadow-2xl' : 'shadow-xl'

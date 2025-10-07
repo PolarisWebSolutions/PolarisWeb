@@ -157,7 +157,7 @@ const CardNav: React.FC<CardNavProps> = ({
 
   return (
     <div
-      className={`card-nav-container fixed left-1/2 -translate-x-1/2 w-[90%] max-w-[800px] z-[100] top-[1.2em] md:top-[2em] ${className}`}
+      className={`card-nav-container w-[90%] max-w-[800px] mx-auto mt-4 ${className}`}
     >
       <nav
         ref={navRef}
