@@ -55,24 +55,7 @@ const Hero = () => {
             </Button>
           </div>
 
-          {/* Trust indicators */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="flex flex-col items-center text-center">
-              <ShieldCheckIcon className="h-12 w-12 text-primaryGreen mb-4" />
-              <h3 className="text-lg font-semibold mb-2">Military-grade Security</h3>
-              <p className="text-silver">99.9% uptime with enterprise-level protection and daily backups</p>
-            </div>
-            <div className="flex flex-col items-center text-center">
-              <DevicePhoneMobileIcon className="h-12 w-12 text-primaryGreen mb-4" />
-              <h3 className="text-lg font-semibold mb-2">Mobile-First Design</h3>
-              <p className="text-silver">Optimized for mobile users who make up 60% of web traffic</p>
-            </div>
-            <div className="flex flex-col items-center text-center">
-              <GlobeAltIcon className="h-12 w-12 text-primaryGreen mb-4" />
-              <h3 className="text-lg font-semibold mb-2">SEO Built-In</h3>
-              <p className="text-silver">Get found on Google with built-in SEO optimization</p>
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>
