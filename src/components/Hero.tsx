@@ -29,7 +29,7 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Link href="/book-demo">
+            <Link href="#" onClick={(e) => e.preventDefault()}>
               <Button 
                 size="lg" 
                 className="w-full sm:w-auto bg-transparent border-2 border-white text-white hover:bg-white hover:text-black transition-all duration-300"
@@ -37,7 +37,7 @@ const Hero = () => {
                 Book a Demo
               </Button>
             </Link>
-            <Link href="/quote">
+            <Link href="#" onClick={(e) => e.preventDefault()}>
               <Button 
                 size="lg" 
                 className="w-full sm:w-auto bg-transparent border-2 border-white text-white hover:bg-white hover:text-black transition-all duration-300"

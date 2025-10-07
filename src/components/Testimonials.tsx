@@ -81,10 +81,10 @@ const Testimonials = () => {
               Let us help you create a website that drives results for your business.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/book-demo" className="inline-flex items-center justify-center px-6 py-3 bg-primaryBlue text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors">
+              <a href="#" onClick={(e) => e.preventDefault()} className="inline-flex items-center justify-center px-6 py-3 bg-primaryBlue text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors">
                 Get Started
               </a>
-              <a href="/quote" className="inline-flex items-center justify-center px-6 py-3 bg-white text-primaryBlue font-semibold rounded-lg border-2 border-primaryBlue hover:bg-primaryBlue hover:text-white transition-colors">
+              <a href="#" onClick={(e) => e.preventDefault()} className="inline-flex items-center justify-center px-6 py-3 bg-white text-primaryBlue font-semibold rounded-lg border-2 border-primaryBlue hover:bg-primaryBlue hover:text-white transition-colors">
                 View Portfolio
               </a>
             </div>

@@ -154,7 +154,7 @@ export default function BookDemo() {
           <p className="text-white mb-6">
             Can't find a time that works? Contact us directly and we'll work with your schedule.
           </p>
-          <Link href="/quote">
+          <Link href="#" onClick={(e) => e.preventDefault()}>
             <Button variant="secondary" size="lg">
               View Portfolio Instead
             </Button>

@@ -65,10 +65,10 @@ const AddOns = () => {
             </div>
 
             <div className="space-y-3">
-              <Link href="/book-demo" className="block">
+              <Link href="#" className="block" onClick={(e) => e.preventDefault()}>
                 <Button className="w-full">Get Started</Button>
               </Link>
-              <Link href="/quote" className="block">
+              <Link href="#" className="block" onClick={(e) => e.preventDefault()}>
                 <Button variant="outline" className="w-full">View Portfolio</Button>
               </Link>
             </div>
@@ -103,10 +103,10 @@ const AddOns = () => {
             </div>
 
             <div className="space-y-3">
-              <Link href="/book-demo" className="block">
+              <Link href="#" className="block" onClick={(e) => e.preventDefault()}>
                 <Button className="w-full">Get Started</Button>
               </Link>
-              <Link href="/quote" className="block">
+              <Link href="#" className="block" onClick={(e) => e.preventDefault()}>
                 <Button variant="outline" className="w-full">View Portfolio</Button>
               </Link>
             </div>

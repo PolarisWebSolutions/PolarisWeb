@@ -36,7 +36,8 @@ const Navbar = () => {
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
-                  href={link.href}
+                  href="#"
+                  onClick={(e) => e.preventDefault()}
                   className="text-deepNavy hover:text-primaryBlue px-3 py-2 text-sm font-medium transition-colors"
                 >
                   {link.label}
@@ -47,7 +48,7 @@ const Navbar = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:block">
-            <Link href="/book-demo">
+            <Link href="#" onClick={(e) => e.preventDefault()}>
               <Button>Get Started</Button>
             </Link>
           </div>
@@ -76,7 +77,7 @@ const Navbar = () => {
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
-                  href={link.href}
+                  href="#"
                   className="text-deepNavy hover:text-primaryBlue block px-3 py-2 text-base font-medium"
                   onClick={() => setIsOpen(false)}
                 >
@@ -84,7 +85,7 @@ const Navbar = () => {
                 </Link>
               ))}
               <div className="pt-4">
-                <Link href="/book-demo" onClick={() => setIsOpen(false)}>
+                <Link href="#" onClick={() => setIsOpen(false)}>
                   <Button className="w-full">Get Started</Button>
                 </Link>
               </div>

@@ -50,7 +50,7 @@ const CardNav = () => {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
             >
-              <Link href="/" className="flex items-center group">
+              <Link href="#" className="flex items-center group" onClick={(e) => e.preventDefault()}>
                 <motion.div 
                   className="w-10 h-10 bg-gradient-to-br from-primaryBlue to-blue-600 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow duration-300"
                   whileHover={{ rotate: 5 }}
@@ -78,7 +78,8 @@ const CardNav = () => {
                   transition={{ duration: 0.3, delay: index * 0.1 }}
                 >
                   <Link
-                    href={link.href}
+                    href="#"
+                    onClick={(e) => e.preventDefault()}
                     className="relative px-4 py-2 text-deepNavy hover:text-primaryBlue font-medium transition-colors duration-200 group"
                   >
                     <motion.span
@@ -170,9 +171,9 @@ const CardNav = () => {
                       transition={{ duration: 0.2, delay: index * 0.1 }}
                     >
                       <Link
-                        href={link.href}
+                        href="#"
+                        onClick={(e) => setIsOpen(false)}
                         className="block px-4 py-3 text-deepNavy hover:text-primaryBlue hover:bg-blue-50 rounded-lg font-medium transition-all duration-200"
-                        onClick={() => setIsOpen(false)}
                       >
                         {link.label}
                       </Link>
@@ -184,7 +185,7 @@ const CardNav = () => {
                     transition={{ duration: 0.3, delay: 0.3 }}
                     className="pt-4"
                   >
-                    <Link href="/book-demo" onClick={() => setIsOpen(false)}>
+                    <Link href="#" onClick={() => setIsOpen(false)}>
                       <Button className="w-full">
                         Get Started
                       </Button>

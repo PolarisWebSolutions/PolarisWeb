@@ -221,7 +221,7 @@ export default function Quote() {
           <p className="text-white mb-6">
             Book a free consultation to discuss your project in detail.
           </p>
-          <Link href="/book-demo">
+          <Link href="#" onClick={(e) => e.preventDefault()}>
             <Button variant="secondary" size="lg">
               Get Started
             </Button>

@@ -53,7 +53,8 @@ const Footer = () => {
                 {links.map((link) => (
                   <li key={link.href}>
                     <Link
-                      href={link.href}
+                      href="#"
+                      onClick={(e) => e.preventDefault()}
                       className="text-mediumGray hover:text-deepNavy transition-colors"
                     >
                       {link.label}
@@ -72,13 +73,13 @@ const Footer = () => {
               Built with ❤️ in Canada
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link href="/terms" className="text-mediumGray hover:text-deepNavy text-sm transition-colors">
+              <Link href="#" onClick={(e) => e.preventDefault()} className="text-mediumGray hover:text-deepNavy text-sm transition-colors">
                 Terms
               </Link>
-              <Link href="/privacy" className="text-mediumGray hover:text-deepNavy text-sm transition-colors">
+              <Link href="#" onClick={(e) => e.preventDefault()} className="text-mediumGray hover:text-deepNavy text-sm transition-colors">
                 Privacy
               </Link>
-              <Link href="/contact" className="text-mediumGray hover:text-deepNavy text-sm transition-colors">
+              <Link href="#" onClick={(e) => e.preventDefault()} className="text-mediumGray hover:text-deepNavy text-sm transition-colors">
                 Contact
               </Link>
             </div>

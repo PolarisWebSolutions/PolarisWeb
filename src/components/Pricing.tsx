@@ -100,7 +100,7 @@ const Pricing = () => {
             </div>
 
             <div className="space-y-3">
-              <Link href="/book-demo" className="block">
+              <Link href="#" className="block" onClick={(e) => e.preventDefault()}>
                 <Button className="w-full bg-transparent border-2 border-white text-white hover:bg-white hover:text-black transition-all duration-300">Book a Demo</Button>
               </Link>
             </div>
@@ -137,7 +137,7 @@ const Pricing = () => {
             </div>
 
             <div className="space-y-3">
-              <Link href="/book-demo" className="block">
+              <Link href="#" className="block" onClick={(e) => e.preventDefault()}>
                 <Button className="w-full bg-transparent border-2 border-white text-white hover:bg-white hover:text-black transition-all duration-300">Book a Demo</Button>
               </Link>
             </div>

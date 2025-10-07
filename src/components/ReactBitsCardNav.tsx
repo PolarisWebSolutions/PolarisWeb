@@ -190,7 +190,7 @@ const CardNav: React.FC<CardNavProps> = ({
           </div>
 
           <div className="logo-container flex items-center md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 order-1 md:order-none">
-            <Link href="/" className="cursor-pointer">
+            <Link href="#" className="cursor-pointer" onClick={(e) => e.preventDefault()}>
               <img src={logo} alt={logoAlt} className="logo h-[40px]" />
             </Link>
           </div>
@@ -199,6 +199,7 @@ const CardNav: React.FC<CardNavProps> = ({
             type="button"
             className="card-nav-cta-button hidden md:inline-flex items-center justify-center border-0 rounded-[calc(0.75rem-0.2rem)] px-4 h-full font-medium cursor-pointer transition-colors duration-300"
             style={{ backgroundColor: '#000000', color: '#FFFFFF' }}
+            onClick={(e) => e.preventDefault()}
           >
             Get Started
           </button>
@@ -225,7 +226,8 @@ const CardNav: React.FC<CardNavProps> = ({
                   <a
                     key={`${lnk.label}-${i}`}
                     className="nav-card-link inline-flex items-center gap-[6px] no-underline cursor-pointer transition-opacity duration-300 hover:opacity-75 text-[15px] md:text-[16px]"
-                    href={lnk.href}
+                    href="#"
+                    onClick={(e) => e.preventDefault()}
                     aria-label={lnk.ariaLabel}
                   >
                     <GoArrowUpRight className="nav-card-link-icon shrink-0" aria-hidden="true" />
